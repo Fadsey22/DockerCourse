@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t FADSEY22/react -f Dockerfile.dev .
+  - docker build -t fadsey/react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true FADSEY22/react npm run test
+  - docker run -e CI=true fadsey/react npm run test
